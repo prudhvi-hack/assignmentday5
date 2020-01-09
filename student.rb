@@ -76,12 +76,12 @@ when 8
         end
     end
     for i in b.keys
-        puts "b[i] from #{i}"
+        puts "#{b[i]} from #{i}"
     end
 when 9
     b={}
     for i in a
-        if state.has_key?(i.branch)
+        if b.has_key?(i.branch)
             b[i.branch]+=1
         else
             b[i.branch]=1
@@ -89,7 +89,7 @@ when 9
     end
     
     for i in b.keys
-        puts "b[i] from #{i}"
+        puts "#{b[i]} from #{i}"
     end
 when 10
     puts "thank you"
